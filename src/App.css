@@ -1,8 +1,40 @@
 #root {
+  width: 100%;
   max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+  padding: .5rem;
+
+  margin-left: 5rem;
+  margin-right: .5rem;
+}
+
+.main {
+  display: grid;
+  column-gap: 5rem;
+  grid-template-columns: 5fr 10fr;
+}
+
+.forms {
+  color: aliceblue;
+}
+
+.output {
+  display: grid;
+  grid-template-columns: 2fr 3fr;
+
+  box-shadow: rgba(50, 50, 93, 0.1) 0px 13px 27px -5px,
+  rgba(0, 0, 0, 0.25) 0px 8px 16px -8px;
+}
+
+.output > :first-child {
+  background-color: rgb(13, 106, 143);
+}
+
+.output > * {
+  padding: 1rem;
+}
+
+.output h3 {
+  background-color: #f3f4f6;;
 }
 
 .logo {
@@ -17,6 +49,8 @@
 .logo.react:hover {
   filter: drop-shadow(0 0 2em #61dafbaa);
 }
+
+
 
 @keyframes logo-spin {
   from {
