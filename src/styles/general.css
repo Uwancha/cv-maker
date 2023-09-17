@@ -1,0 +1,70 @@
+.infos {
+    background-color: white;
+    color: black;
+    margin-bottom: 2rem;
+    padding: .8rem;
+    box-shadow: rgba(50, 50, 93, 0.1) 0px 13px 27px -5px,
+    rgba(0, 0, 0, 0.25) 0px 8px 16px -8px;
+    border-radius: 8px;
+}
+
+.infos > *  {
+    display: flex;
+    justify-content: space-between;
+
+    margin-bottom: 1rem;
+}
+
+.infos > div {
+    display: flex;
+    flex-direction: column;
+}
+
+.infos input {
+    background-color: #f3f4f6;
+    border-radius: 8px; 
+    border: none;
+    height: 30px;
+}
+
+.infos input:focus {
+    outline: none;
+    border: solid 1px #646cff;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-around;
+}
+
+.experinces > div{
+    display: flex;
+    gap: 2rem;
+}
+
+#dates {
+    display: flex;
+}
+
+.dates > div{
+    display: flex;
+    flex-direction: column;
+}
+
+.education div {
+    display: flex;
+    gap: 1rem;
+}
+
+.details {
+    color: white;
+}
+
+.details h2 {
+    color: inherit;
+}
+
+.details div {
+    margin-left: 1rem;
+}
+
