@@ -1,22 +1,22 @@
 import React from "react";
 import '../styles/general.css'
 
-function Experience() {
+function Experience({company, position, fromDate, untilDate, description}) {
     return (
         <div>
             <h3>Professional Experience</h3>
             <div className="experinces">
                 <div>
-                    <h4>Umbrella Inc.</h4>
-                    <p>UX & UI Designer</p>
+                    <h4>{company}</h4>
+                    <p>{position}</p>
                 </div>
                 <div>
-                    <p>2023</p>
+                    <p>{fromDate}</p>
                     <p>-</p>
-                    <p>Present</p>
+                    <p>{untilDate}</p>
                 </div>
                 <div>
-                    <p>Designed and prototyped user interface patterns for various clients in various industries, ranging from self-service apps within the telecommunications-sector to mobile games for IOS and Android</p>
+                    <p>{description}</p>
                 </div>
             </div>
         </div>

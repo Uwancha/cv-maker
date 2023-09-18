@@ -1,25 +1,16 @@
 import React, { useState } from "react";
 import '../styles/general.css'
 
-function EducationForm() {
-    const [schoolName, setSchoolName] = useState('');
-    const [field, setField] = useState('');
-    const [dateOfStudy, setDateOfStudy] = useState('');
-
-    function handleSubmit(e) {
-        e.preventDefault();
-
-        console.log('School Name:', schoolName);
-        console.log('Field of study:', field);
-        console.log('Date of study:', dateOfStudy);
-    }
+function EducationForm({
+    schoolName, field, city, startDate, endDate, setSchoolName, setField, setCityName, setStartDate, setEndDate, handleSubmit 
+}) {
 
     return (
         <form onSubmit={handleSubmit}>
             <legend><h2>Education</h2></legend>
             <div className="infos">
                 <div>
-                    <label htmlFor="schoolName">School Name:</label>
+                    <label htmlFor="schoolName">School Name</label>
                     <input
                         type="text"
                         id="schoolName"
@@ -28,7 +19,7 @@ function EducationForm() {
                     />
                 </div>
                 <div>
-                    <label htmlFor="field">Field of study:</label>
+                    <label htmlFor="field">Field of study</label>
                     <input
                         type="text"
                         id="field"
@@ -37,12 +28,30 @@ function EducationForm() {
                 />
                 </div>
                 <div>
-                    <label htmlFor="date">Date:</label>
+                    <label htmlFor="city">City</label>
                     <input
-                        type="date"
+                        type="text"
+                        id="city"
+                        value={city}
+                        onChange={(e) => setCityName(e.target.value)}
+                    />
+                </div>
+                <div>
+                    <label htmlFor="date">Start Date</label>
+                    <input
+                        type="text"
                         id="date"
-                        value={dateOfStudy}
-                        onChange={(e) => setDateOfStudy(e.target.value)}
+                        value={startDate}
+                        onChange={(e) => setStartDate(e.target.value)}
+                    />
+                </div>
+                <div>
+                    <label htmlFor="date">End Date</label>
+                    <input
+                        type="text"
+                        id="date"
+                        value={endDate}
+                        onChange={(e) => setEndDate(e.target.value)}
                     />
                 </div>
                 <div>

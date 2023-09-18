@@ -1,14 +1,14 @@
 import React from "react";
 import '../styles/general.css'
 
-function GeneralInfo() {
+function GeneralInfo({fullName, email, phone, address}) {
     return (
         <div className="details">
-            <h2>Sitota Alemu</h2>
+            <h2>{fullName}</h2>
             <div>
-                <p>email@example.com</p>
-                <p>+2511111111</p>
-                <p>Addis Ababa, Ethiopia</p>
+                <p>{email}</p>
+                <p>{phone}</p>
+                <p>{address}</p>
             </div>
         </div>
     )
