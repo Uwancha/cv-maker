@@ -22,7 +22,11 @@ To run the CV application locally, follow these steps:
    ```
 
    This will run the application in development mode. Open [http://localhost:3000](http://localhost:3000) in your browser to view it.
-   
+
+
+## Live Demo
+
+You can see the live demo [here](https://main--uwancha-cvmaker.netlify.app/)
 
 ## Usage
 
