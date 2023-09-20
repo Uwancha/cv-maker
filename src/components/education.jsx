@@ -4,7 +4,7 @@ import '../styles/general.css'
 function Education({field, schoolName, city, startDate, endDate}) {
     return (
         <div >
-            <h3>Education</h3>
+            <h3 className="header">Education</h3>
             <div className="education">
                 <div>
                     <p>{field}</p>

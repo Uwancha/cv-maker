@@ -27,8 +27,8 @@ function ExperienceForm({company, position, description, fromDate, untilDate, se
                 </div>
                 <div>
                     <label htmlFor="description">Description</label>
-                    <input
-                        type="textarea"
+                    <textarea
+                        rows='5'cols='4'
                         id="description"
                         value={description}
                         onChange={(e) => setDescription(e.target.value)}

@@ -27,7 +27,18 @@
     height: 30px;
 }
 
+textarea {
+    background-color: #f3f4f6;
+    border-radius: 8px; 
+    border: none;
+}
+
 .infos input:focus {
+    outline: none;
+    border: solid 1px #646cff;
+}
+
+textarea:focus {
     outline: none;
     border: solid 1px #646cff;
 }
@@ -39,7 +50,7 @@
 
 .experinces > div{
     display: flex;
-    gap: 2rem;
+    justify-content: space-between;
 }
 
 #dates {
@@ -66,5 +77,19 @@
 
 .details div {
     margin-left: 1rem;
+}
+
+.date-description {
+    display: flex;
+    justify-content: space-between;
+}
+
+.date-description :first-child {
+    display: flex;
+    gap: .3rem;
+}
+
+.header {
+    background-color: #f3f4f6a7;
 }
 
