@@ -46,7 +46,7 @@ function App() {
         <div>
         <GeneralInfo fullName={fullName} email={email} phone={phone} address={addres}/>
         </div>
-        <div>
+        <div className='content'>
           <Experience company={company} position={position} description={description} fromDate={fromDate} untilDate={untilDate}/>
           <Education schoolName={schoolName} field={field} city={city} startDate={startDate} endDate={endDate}/>
         </div>

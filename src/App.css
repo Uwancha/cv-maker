@@ -3,13 +3,13 @@
   max-width: 1280px;
   padding: .5rem;
 
-  margin-left: 5rem;
-  margin-right: .5rem;
+  margin-left: 3rem;
+  margin-right: .1rem;
 }
 
 .main {
   display: grid;
-  column-gap: 5rem;
+  column-gap: 3rem;
   grid-template-columns: 5fr 10fr;
 }
 
@@ -20,6 +20,8 @@
 .output {
   display: grid;
   grid-template-columns: 2fr 3fr;
+  height: 50%;
+  margin-top: 4rem;
 
   box-shadow: rgba(50, 50, 93, 0.1) 0px 13px 27px -5px,
   rgba(0, 0, 0, 0.25) 0px 8px 16px -8px;
@@ -31,6 +33,12 @@
 
 .output > * {
   padding: 1rem;
+}
+
+.content {
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+  background-color: white;
 }
 
 .logo {
@@ -46,27 +54,15 @@
   filter: drop-shadow(0 0 2em #61dafbaa);
 }
 
-
-
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
+@media (max-width: 768px) {
+  #root {
+    margin-left: .5rem;
   }
-  to {
-    transform: rotate(360deg);
+
+  .main {
+    grid-template-rows: 4fr 5fr;
+    grid-template-columns: 1fr;
+    width: 100vw;
+    max-width: 1500px;
   }
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
-}
-
-.card {
-  padding: 2em;
-}
-
-.read-the-docs {
-  color: #888;
 }

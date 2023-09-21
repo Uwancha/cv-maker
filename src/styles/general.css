@@ -50,7 +50,8 @@ textarea:focus {
 
 .experinces > div{
     display: flex;
-    justify-content: space-between;
+    align-items: center;
+    gap: 3rem;
 }
 
 #dates {
@@ -64,6 +65,7 @@ textarea:focus {
 
 .education div {
     display: flex;
+    align-items: center;
     gap: 1rem;
 }
 
@@ -79,17 +81,14 @@ textarea:focus {
     margin-left: 1rem;
 }
 
-.date-description {
-    display: flex;
-    justify-content: space-between;
-}
-
 .date-description :first-child {
     display: flex;
     gap: .3rem;
 }
 
 .header {
-    background-color: #f3f4f6a7;
+    background-color: #f3f4f6;
+    border-radius: 8px;
+    padding-left: .5rem;
 }
 
